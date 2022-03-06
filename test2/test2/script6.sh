@@ -1,4 +1,5 @@
-f (($(docker ps -a  |grep AIDA2 |wc -l) > 0 ))
+#!/bin/bash
+if (($(docker ps -a  |grep AIDA2 |wc -l) > 0 ))
 then
  docker stop $(docker ps -a | grep AIDA2 | awk '{print $1}')
  docker rm $(docker ps -a | grep AIDA2 | awk '{print $1}')
