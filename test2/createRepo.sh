@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rm -rf /etc/yum.repos.d/test.repo || true
 touch /etc/yum.repos.d/test.repo
 var="[test]
 name=test

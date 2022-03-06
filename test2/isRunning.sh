@@ -8,7 +8,7 @@ then
  echo "runing"
 
 else
- echo "not running"
+ echo "not installed"
 fi
 
 
